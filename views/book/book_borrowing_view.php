@@ -1,10 +1,7 @@
- <script type="text/javascript" src="/js/ext34/examples/ux/Spinner.js"></script>
- <script type="text/javascript" src="/js/ext34/examples/ux/SpinnerField.js"></script>
- <link rel="stylesheet" type="text/css" href="/js/ext34/examples/ux/css/Spinner.css" />
 <style type="text/css">
-.unfunded{
-   background-color: #f18282 !important;
-   color: white;
+.unfunded {
+    background-color: #f18282 !important;
+    color: white;
 }
 .returned{
    background-color: #95e797 !important;
@@ -63,7 +60,7 @@
 	                getRowClass : function (row, index) { 
 	                    var cls = ''; 
 	                    var data = row.data;
-	                    if(isSet(data.UNFUNDED) && isSet(data.PAID)){
+	                    if((typeof data.UNFUNDED != 'undefined') && (typeof data.PAID != 'undefined')){
 	                        if(data.BOOSTAT == "OVERDUE"){
 	                        cls = 'unfunded'; 
 	                        }

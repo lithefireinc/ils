@@ -5,9 +5,7 @@
         <title id='title'>Online Library System</title>
 
         <!-- ** CSS ** -->
-        <!-- base library -->
-        <link rel="stylesheet" type="text/css" href="/js/ext34/resources/css/ext-all.css" />
-	<!--<link href="/hrisv2/css/ui_login.css" rel="stylesheet" type="text/css" />-->
+        <?php echo css_asset("all.css"); ?>
  <style type="text/css">
 * {margin:0;padding:0}
 html,body{height:100%}
@@ -60,12 +58,12 @@ overflow:hidden;
 <![endif]-->
 
 <body id="bod">
-<!-- ** Javascript ** -->
-        <!-- ExtJS library: base/adapter -->
-        <script type="text/javascript" src="/js/ext34/adapter/ext/ext-base.js"></script>
-        <script type="text/javascript" src="/js/commonjs/ExtCommon.js"></script>
-        <!-- ExtJS library: all widgets -->
-        <script type="text/javascript" src="/js/ext34/ext-all-debug.js"></script>
+    <script type="text/javascript">
+        var baseurl = "<?php echo base_url(); ?>"
+    </script>
+    <?php echo js_asset("ext.js"); ?>
+    <?php echo js_asset("all.js"); ?>
+    <?php echo js_asset("components.js"); ?>
 
 
 <script type="text/javascript">

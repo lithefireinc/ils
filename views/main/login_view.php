@@ -61,12 +61,12 @@ overflow:hidden;
 
 <body id="bod">
 <!-- ** Javascript ** -->
-        <!-- ExtJS library: base/adapter -->
-        <script type="text/javascript" src="/js/ext34/adapter/ext/ext-base.js"></script>
-        <script type="text/javascript" src="/js/commonjs/ExtCommon.js"></script>
-        <!-- ExtJS library: all widgets -->
-        <script type="text/javascript" src="/js/ext34/ext-all-debug.js"></script>
-
+<script type="text/javascript">
+    var baseurl = "<?php echo base_url(); ?>"
+</script>
+<?php echo js_asset("ext.js"); ?>
+<?php echo js_asset("all.js"); ?>
+<?php echo js_asset("components.js"); ?>
 
 <script type="text/javascript">
         // Path to the blank image should point to a valid location on your server

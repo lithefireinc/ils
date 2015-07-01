@@ -1,0 +1,13 @@
+.idea/
+.DS_Store
+
+cache/*
+!cache/index.html
+!cache/.htaccess
+
+logs/*
+!logs/index.html
+!logs/.htaccess
+
+config/development/*
+config/production/*

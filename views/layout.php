@@ -4,7 +4,8 @@
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title><?php echo $title; ?></title>
-		<link href= "/css/ils/ui_mainpage.css" rel="stylesheet" type="text/css" />
+        <?php echo css_asset("all.css"); ?>
+<!--		<link href= "/css/ils/ui_mainpage.css" rel="stylesheet" type="text/css" />-->
 <!--[if lt IE 8]>
 
 
@@ -52,23 +53,15 @@ position:relative;
 
 <![endif]-->
 
- 
-
-        <!-- ** CSS ** -->
-
-        <!-- base library -->
-
-        <link rel="stylesheet" type="text/css" href="/js/ext34/resources/css/ext-all.css" />
-        <!-- overrides to base library -->
-
 </head>
 <body>
 <!-- ** Javascript ** -->
-        <!-- ExtJS library: base/adapter -->
-        <script type="text/javascript" src="/js/ext34/adapter/ext/ext-base.js"></script>
-        <script type="text/javascript" src="/js/commonjs/ExtCommon.js"></script>
-        <!-- ExtJS library: all widgets -->
-        <script type="text/javascript" src="/js/ext34/ext-all-debug.js"></script>
+<script type="text/javascript">
+    var baseurl = "<?php echo base_url(); ?>"
+</script>
+<?php echo js_asset("ext.js"); ?>
+<?php echo js_asset("all.js"); ?>
+<?php echo js_asset("components.js"); ?>
     
 
 
@@ -79,7 +72,7 @@ position:relative;
         
 <div id="maincontent">
 
-<img src="/images/ilsheader.jpg" />
+<?php echo image_asset('ilsheader.jpg')?>
 
 
     
